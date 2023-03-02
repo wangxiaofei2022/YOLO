@@ -63,3 +63,6 @@ YOLOv5的权重文件所在目录：
 
 **CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov3-master/runs/train/exp5/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
 
+# 二.YOLOv2应用
+## 2.1 批量检测图片的过程
+
