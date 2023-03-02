@@ -41,26 +41,22 @@ YOLOv5的权重文件所在目录：
 
 （1）运行val.py文件，其中两行修改为如下
 
-    **parser.add_argument('--task', default='test', help='train, val, test, speed or study')**
-    **parser.add_argument('--project', default=ROOT / 'runs/val', help='save to project/name')**
+      parser.add_argument('--task', default='test', help='train, val, test, speed or study')
+      parser.add_argument('--project', default=ROOT / 'runs/val', help='save to project/name')
 
 （2）YOLOv5运行语句如下
 
-**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5n/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
-
-**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5s/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
-
-**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5m/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
-
-**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5l/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
-
-**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5x/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
+      CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5n/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
+      CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5s/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
+      CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5m/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
+      CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5l/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
+      CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5x/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
 
 生成的结果在/data/wangxiaofei/yolov5/runs/val/exp1文件夹下
 
 （2）YOLOv3运行语句如下
 
-**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov3-master/runs/train/exp5/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
+      CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov3-master/runs/train/exp5/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
 
 # 二.YOLOv2应用
 ## 2.1 批量检测图片的过程
