@@ -41,9 +41,8 @@ YOLOv5的权重文件所在目录：
 
 （1）运行val.py文件，其中两行修改为如下
 
-**parser.add_argument('--task', default='test', help='train, val, test, speed or study')**
-
-**parser.add_argument('--project', default=ROOT / 'runs/val', help='save to project/name')**
+    **parser.add_argument('--task', default='test', help='train, val, test, speed or study')**
+    **parser.add_argument('--project', default=ROOT / 'runs/val', help='save to project/name')**
 
 （2）YOLOv5运行语句如下
 
