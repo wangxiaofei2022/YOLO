@@ -47,9 +47,19 @@ YOLOv5的权重文件所在目录：
 
 （2）YOLOv5运行语句如下
 
-**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5n/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
+**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5n/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
 
-CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5s/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
+**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5s/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
+
+**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5m/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
+
+**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5l/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
+
+**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5x/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
 
 生成的结果在/data/wangxiaofei/yolov5/runs/val/exp1文件夹下
+
+（2）YOLOv3运行语句如下
+
+**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5x/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
 
