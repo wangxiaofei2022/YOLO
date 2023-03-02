@@ -18,7 +18,9 @@ YOLOv5的权重文件所在目录：
 /data/wangxiaofei/yolov5/runs/train/yolov5s/weights/best.pt
 
 ......
+
 ![image](https://github.com/wangxiaofei2022/YOLO/blob/main/YOLOv5_weight1.png)
+
 ![image](https://github.com/wangxiaofei2022/YOLO/blob/main/YOLOv5_weight2.png)
 
 CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5n/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
