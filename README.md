@@ -23,4 +23,33 @@ YOLOv5的权重文件所在目录：
 
 ![image](https://github.com/wangxiaofei2022/YOLO/blob/main/YOLOv5_weight2.png)
 
-CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5n/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
+（2）测试集放置
+
+根据/data/wangxiaofei/yolov5/data/DOTA1_0.yaml里面设置路径
+
+![image](https://github.com/wangxiaofei2022/YOLO/blob/main/path.png)
+
+**/data/wangxiaofei/yolov5/data/images/下面分别有train、val、test三个文件，文件下又有images和labels两个文件夹
+
+![image](https://github.com/wangxiaofei2022/YOLO/blob/main/test_path.png)
+
+上图中，labels.cache是运行val.py文件后产生的；images文件夹里存放需要测试的图片，labels里存放对应的yolo的txt标签
+
+![image](https://github.com/wangxiaofei2022/YOLO/blob/main/yolo_txt_label.png)
+
+2.运行过程
+
+（1）运行val.py文件，其中两行修改为如下
+
+**parser.add_argument('--task', default='test', help='train, val, test, speed or study')**
+
+**parser.add_argument('--project', default=ROOT / 'runs/val', help='save to project/name')**
+
+（2）YOLOv5运行语句如下
+
+**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5n/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
+
+CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5s/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"
+
+生成的结果在/data/wangxiaofei/yolov5/runs/val/exp1文件夹下
+
