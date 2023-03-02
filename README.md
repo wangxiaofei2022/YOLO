@@ -29,11 +29,11 @@ YOLOv5的权重文件所在目录：
 
 ![image](https://github.com/wangxiaofei2022/YOLO/blob/main/path.png)
 
-**/data/wangxiaofei/yolov5/data/images/下面分别有train、val、test三个文件，文件下又有images和labels两个文件夹
+**/data/wangxiaofei/yolov5/data/images/下面分别有train、val、test三个文件，文件下又有images和labels两个文件夹**
 
 ![image](https://github.com/wangxiaofei2022/YOLO/blob/main/test_path.png)
 
-上图中，labels.cache是运行val.py文件后产生的；images文件夹里存放需要测试的图片，labels里存放对应的yolo的txt标签
+上图中，labels.cache是运行val.py文件后产生的；images文件夹里存放需要测试的图片；labels里存放对应的yolo的txt标签
 
 ![image](https://github.com/wangxiaofei2022/YOLO/blob/main/yolo_txt_label.png)
 
@@ -61,5 +61,5 @@ YOLOv5的权重文件所在目录：
 
 （2）YOLOv3运行语句如下
 
-**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov5/runs/train/yolov5x/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
+**CUDA_VISIBLE_DEVICES=6 python val.py --weights "/data/wangxiaofei/yolov3-master/runs/train/exp5/weights/best.pt" --data "/data/wangxiaofei/yolov5/data/DOTA1_0.yaml"**
 
